@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <h1>Customer Transactions</h1>
+            <div class="main-inputs">
+                <input id="fillterByName" type="text" placeholder="Fillter by name...... ">
+                <input id="fillterByAmount" type="text" placeholder="Fillter by amount......">
+            </div>
+            <div class="tableContent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Data</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contents">
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
+        <canvas id="chartData"></canvas>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
